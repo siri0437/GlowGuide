@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Signup</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-purple-100 flex justify-center items-center h-screen">
+
+  <div class="bg-white p-10 rounded-2xl shadow-xl w-96">
+
+    <h1 class="text-3xl font-bold text-purple-600 mb-6">
+
+      Create Account
+
+    </h1>
+
+    <input
+      type="email"
+      id="signupEmail"
+      placeholder="Email"
+      class="w-full border p-3 rounded-lg mb-4"
+    />
+
+    <input
+      type="password"
+      id="signupPassword"
+      placeholder="Password"
+      class="w-full border p-3 rounded-lg mb-4"
+    />
+
+    <button
+      onclick="signup()"
+      class="w-full bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700">
+
+      Signup
+
+    </button>
+
+  </div>
+
+  <!-- FIREBASE -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+  <script src="./js/firebase-config.js"></script>
+
+  <script src="./js/auth.js"></script>
+</body>
+
+</html>

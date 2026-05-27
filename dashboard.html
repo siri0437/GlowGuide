@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>GlowGuide Dashboard</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-purple-50 min-h-screen p-10">
+
+  <!-- HEADER -->
+
+  <div class="max-w-6xl mx-auto">
+
+    <div class="flex justify-between items-center mb-10">
+
+      <div>
+
+        <h1
+          id="welcomeText"
+          class="text-5xl font-bold text-purple-600">
+
+          Welcome ✨
+
+        </h1>
+
+        <p class="text-gray-500 mt-2">
+
+          Your skincare universe
+
+        </p>
+
+      </div>
+
+      <button
+        onclick="logout()"
+        class="bg-red-500 text-white px-6 py-3 rounded-2xl hover:bg-red-600">
+
+        Logout
+
+      </button>
+
+    </div>
+
+    <!-- STATS -->
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- WISHLIST -->
+
+      <div class="bg-white p-8 rounded-3xl shadow-xl">
+
+        <h2 class="text-2xl font-bold text-pink-500">
+
+          ❤️ Wishlist
+
+        </h2>
+
+        <p
+          id="wishlistCount"
+          class="text-5xl font-bold mt-5">
+
+          0
+
+        </p>
+
+      </div>
+
+      <!-- ROUTINES -->
+
+      <div class="bg-white p-8 rounded-3xl shadow-xl">
+
+        <h2 class="text-2xl font-bold text-purple-500">
+
+          🧴 Routines
+
+        </h2>
+
+        <p
+          id="routineCount"
+          class="text-5xl font-bold mt-5">
+
+          0
+
+        </p>
+
+      </div>
+
+      <!-- COMPARE -->
+
+      <div class="bg-white p-8 rounded-3xl shadow-xl">
+
+        <h2 class="text-2xl font-bold text-blue-500">
+
+          ⚡ Compared
+
+        </h2>
+
+        <p
+          id="compareCount"
+          class="text-5xl font-bold mt-5">
+
+          0
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+
+      <a
+        href="products.html"
+        class="bg-white p-8 rounded-3xl shadow-xl hover:scale-105 transition">
+
+        <h2 class="text-3xl font-bold text-purple-600">
+
+          Products 🧴
+
+        </h2>
+
+      </a>
+
+      <a
+        href="routine.html"
+        class="bg-white p-8 rounded-3xl shadow-xl hover:scale-105 transition">
+
+        <h2 class="text-3xl font-bold text-purple-600">
+
+          Routine Tracker ✨
+
+        </h2>
+
+      </a>
+
+      <a
+        href="ai.html"
+        class="bg-white p-8 rounded-3xl shadow-xl hover:scale-105 transition">
+
+        <h2 class="text-3xl font-bold text-purple-600">
+
+          AI Assistant 🤖
+
+        </h2>
+
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- FIREBASE -->
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+  <!-- CUSTOM JS -->
+
+  <script src="js/firebase-config.js"></script>
+
+  <script src="js/auth.js"></script>
+
+  <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

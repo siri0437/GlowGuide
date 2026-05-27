@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>AI Skin Assistant</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-purple-50 min-h-screen p-10">
+
+  <div class="max-w-2xl mx-auto bg-white p-10 rounded-3xl shadow-2xl">
+
+    <h1 class="text-4xl font-bold text-purple-600 mb-6">
+
+      AI Skin Assistant 🤖
+
+    </h1>
+
+    <textarea
+      id="userInput"
+      placeholder="Describe your skin concerns..."
+      class="w-full border border-gray-300 rounded-xl p-4 h-40 resize-none"></textarea>
+
+    <button
+      onclick="analyzeSkin()"
+      class="mt-5 bg-purple-600 text-white px-6 py-3 rounded-xl hover:bg-purple-700">
+
+      Analyze Skin
+
+    </button>
+
+    <div
+      id="result"
+      class="mt-8 bg-purple-100 p-5 rounded-2xl hidden">
+
+    </div>
+
+  </div>
+
+  <script src="js/ai.js"></script>
+
+</body>
+
+</html>

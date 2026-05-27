@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Compare</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-purple-50 p-10">
+
+<h1 class="text-4xl font-bold text-purple-600 mb-10">
+
+Compare Products
+
+</h1>
+
+<div id="compareContainer"
+class="grid md:grid-cols-2 gap-10">
+
+</div>
+
+<script>
+
+const compareItems =
+JSON.parse(localStorage.getItem("compareItems"))
+|| [];
+
+document.getElementById(
+"compareContainer"
+).innerHTML = `
+
+<div class="bg-white p-10 rounded-2xl shadow-xl">
+
+<h2 class="text-2xl font-bold mb-5">
+
+Selected Product IDs
+
+</h2>
+
+<p class="text-lg">
+
+${compareItems.join(", ")}
+
+</p>
+
+</div>
+
+`;
+
+</script>
+
+</body>
+
+</html>
